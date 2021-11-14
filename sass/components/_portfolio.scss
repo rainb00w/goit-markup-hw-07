@@ -1,0 +1,96 @@
+.portfolio-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .portfolio-overview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  
+  .portfolio-overview-info {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+  
+  .portfolio-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .portfolio-overview-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    padding-bottom: 4px;
+    color: var(--primary-text-color);
+  }
+  
+  .portfolio-overview-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  
+  .portfolio-link {
+    text-decoration: none;
+  }
+  
+  .portfolio-overview-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    transition: box-shadow var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  
+  
+  .portfolio-link-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-link-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--primary-bg-color);
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .portfolio-overview-item:hover .portfolio-link-text {
+    transform: translateY(0);
+  }
+  
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: rotate(180deg);
+    transition: transform var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+  }  
+  
+  

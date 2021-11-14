@@ -1,0 +1,107 @@
+.footer {
+  background-color: var(--accent-bg-color);
+}
+
+.logo3 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-address-item,
+.footer-mail {
+  margin-bottom: 9px;
+  display: block;
+}
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  font-style: inherit;
+}
+
+.footer-address-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-bg-color);
+  transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-address-item:hover,
+.footer-address-item:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
+
+.footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
+.footer-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-bg-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-time)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    fill var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-link:hover .footer-icon,
+.footer-link:focus .footer-icon {
+  fill: var(--primary-bg-color);
+}
+
+.footer-mail {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
