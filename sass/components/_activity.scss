@@ -2,7 +2,7 @@
     margin-top: -94px;
   }
   
-  .activity-section-title {
+  .activity__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -12,22 +12,22 @@
     margin-bottom: 50px;
   }
   
-  .feature-list {
+  .feature__list {
     display: flex;
   }
   
-  .feature-list-item:not(:last-child) {
+  .feature__item:not(:last-child) {
     margin-right: 30px;
   }
   
   
-  .feature-list-backdrop {
+  .feature__backdrop {
     position: relative;
     overflow: hidden;
    
   }
   
-  .feature-list-text {
+  .feature__text {
     position: absolute;
     bottom: 0;
     left: 0;

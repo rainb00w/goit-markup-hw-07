@@ -1,8 +1,8 @@
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 
@@ -12,7 +12,7 @@
 }
 
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   background-color: var(--primary-bg-color);
